@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class TemplateComponent implements OnInit {
 
   usuario = {
-    nombre: 'Martha'
+    nombre: ''
   }
 
   constructor() { }
@@ -18,5 +18,6 @@ export class TemplateComponent implements OnInit {
   }
   guardar( forma: NgForm ) {
     console.log( forma );
+    console.log( forma.value );
   }
 }
