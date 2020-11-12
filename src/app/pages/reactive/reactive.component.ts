@@ -104,17 +104,17 @@ export class ReactiveComponent implements OnInit {
 
     // this.forma.setValue({
     this.forma.reset({
-      nombre: 'luis',
-      apellido: 'vazquez',
-      correo: 'luis@gmail.com',
+      nombre: 'Clarissa',
+      apellido: 'Salamanca',
+      correo: 'marthaleo07@gmail.com',
       pass1: '123',
       pass2: '123',
       direccion: {
-        distrito: 'centro',
-        ciudad: 'xaloztoc'
+        distrito: '',
+        ciudad: 'Huamantla'
       }
     });
-    ['comer', 'dormir'].forEach( valor => this.pasatiempos.push( this.fb.control(valor) ));
+    ['Eschuchar musica', 'dormir'].forEach( valor => this.pasatiempos.push( this.fb.control(valor) ));
   }
 
   agregarPasatiempo() {
